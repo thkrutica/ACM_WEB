@@ -1,0 +1,81 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "write-test-file",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-NoProfile",
+				"-Command",
+				"Set-Content -Path 'c:\\Users\\ishan\\OneDrive\\Documents\\ACM website\\_task_test.txt' -Value 'ok'"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "inspect-video",
+			"type": "shell",
+			"command": "C:/Users/ishan/AppData/Local/Python/pythoncore-3.14-64/python.exe",
+			"args": [
+				"c:\\Users\\ishan\\OneDrive\\Documents\\ACM website\\_inspect_video.py"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "python-path-check",
+			"type": "shell",
+			"command": "C:/Users/ishan/AppData/Local/Python/pythoncore-3.14-64/python.exe",
+			"args": [
+				"-c",
+				"import sys; print(sys.executable)"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "pip-show-opencv",
+			"type": "shell",
+			"command": "C:/Users/ishan/AppData/Local/Python/pythoncore-3.14-64/python.exe",
+			"args": [
+				"-m",
+				"pip",
+				"show",
+				"opencv-python"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "install-video-packages",
+			"type": "shell",
+			"command": "C:/Users/ishan/AppData/Local/Python/pythoncore-3.14-64/python.exe",
+			"args": [
+				"-m",
+				"pip",
+				"install",
+				"pillow",
+				"opencv-python"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "inspect-video",
+			"type": "shell",
+			"command": "C:/Users/ishan/AppData/Local/Python/pythoncore-3.14-64/python.exe",
+			"args": [
+				"c:\\Users\\ishan\\OneDrive\\Documents\\ACM website\\_inspect_video.py"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}

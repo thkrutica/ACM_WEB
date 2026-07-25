@@ -1,0 +1,238 @@
+@import "tailwindcss";
+
+/* =========================================================================
+   ACM STUDENT CHAPTER — DESIGN SYSTEM & THEME TOKENS
+   Maintains the dark futuristic theme matching the exact UI/UX design:
+   Near-black background with tech grid overlay, neon cyan, blue, purple, and pink accents.
+   ========================================================================= */
+
+:root {
+  --bg: #050608;
+  --panel: rgba(10, 14, 24, 0.94);
+  --panel-soft: rgba(15, 20, 34, 0.82);
+  --text: #ffffff;
+  --muted: rgba(255, 255, 255, 0.74);
+  --line: rgba(255, 255, 255, 0.1);
+  --blue: #1090ff;
+  --blue-strong: #0c65d3;
+  --violet: #8d42ff;
+  --pink: #ff4fd8;
+  --cyan: #2fe1ff;
+  --shadow: 0 28px 90px rgba(0, 0, 0, 0.6);
+  --radius-xl: 28px;
+  --radius-lg: 20px;
+  --radius-md: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--text);
+  background-color: #030406;
+  /* Tech Grid Mesh Background Pattern as shown in video */
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 44px 44px;
+  background-attachment: fixed;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* =========================================================================
+   PAGE SHELL WRAPPER CONTAINER
+   Rounded dark laptop frame container with top spotlight glow effect.
+   ========================================================================= */
+.page-shell {
+  width: min(95vw, 1440px);
+  min-height: calc(100vh - 2rem);
+  margin: 1rem auto;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(16, 144, 255, 0.06), transparent 30%),
+    rgba(3, 5, 10, 0.96);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.site-main {
+  padding: 0 2rem 2.5rem;
+}
+
+/* =========================================================================
+   TYPOGRAPHY & SECTION BADGES
+   ========================================================================= */
+.section-kicker {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  min-height: 28px;
+  margin: 0;
+  padding: 0 0.75rem;
+  background: rgba(16, 144, 255, 0.1);
+  border: 1px solid rgba(16, 144, 255, 0.3);
+  border-left: 3px solid var(--blue);
+  color: var(--cyan);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.section-title {
+  margin: 0;
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.section-lead {
+  max-width: 62rem;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
+/* =========================================================================
+   BUTTON STYLES
+   ========================================================================= */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  padding: 0.85rem 1.5rem;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.button-primary {
+  background: linear-gradient(180deg, #1090ff 0%, #0c65d3 100%);
+  color: #ffffff;
+  box-shadow: 0 10px 25px rgba(16, 144, 255, 0.35);
+}
+
+.button-secondary {
+  background: rgba(10, 15, 28, 0.8);
+  border-color: rgba(16, 144, 255, 0.8);
+  color: #1090ff;
+}
+
+/* =========================================================================
+   CARDS & GLASSMORPHISM
+   ========================================================================= */
+.card {
+  padding: 1.4rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(14, 18, 30, 0.95), rgba(8, 10, 18, 0.95));
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.4);
+  transition: transform 250ms ease, border-color 250ms ease;
+}
+
+.card:hover {
+  border-color: rgba(16, 144, 255, 0.4);
+}
+
+/* =========================================================================
+   CURVED 3D CAROUSEL UTILITIES
+   Renders event posters in a subtle curved perspective row.
+   ========================================================================= */
+.carousel-3d-container {
+  perspective: 1000px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(16, 144, 255, 0.4) transparent;
+  padding: 2rem 0;
+}
+
+.carousel-3d-track {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  min-width: max-content;
+}
+
+.carousel-3d-card {
+  width: 260px;
+  height: 320px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+  transition: transform 300ms ease, filter 300ms ease;
+}
+
+.carousel-3d-card:hover {
+  transform: scale(1.05) translateZ(20px);
+  border-color: rgba(16, 144, 255, 0.8);
+}
+
+/* =========================================================================
+   DIAGONAL TEAM PORTRAIT SLICER
+   Matching the Chairperson / Vice Chairperson slide design from video.
+   ========================================================================= */
+.team-diagonal-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(20, 30, 55, 0.9), rgba(5, 8, 18, 0.95));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.team-diagonal-accent {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 45%;
+  background: linear-gradient(135deg, #0e65d3 0%, #063980 100%);
+  clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+/* =========================================================================
+   RESPONSIVE LAYOUT ADJUSTMENTS
+   ========================================================================= */
+@media (max-width: 900px) {
+  .page-shell {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .site-main {
+    padding: 0 1.2rem 2rem;
+  }
+}
