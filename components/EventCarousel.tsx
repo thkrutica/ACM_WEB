@@ -16,16 +16,16 @@ const DEFAULT_POSTERS: PosterItem[] = [
   {
     id: 'p1',
     title: 'Career Guidance Session',
-    tag: 'ACM DTC PRESENTS',
+    tag: 'ACM WEEKEND',
     // IMAGE LOCATION: Change image URL below to swap this poster artwork
-    imageUrl: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80',
+    imageUrl: "/images/acm1.jpeg", // IMAGE LOCATION: Change event poster image URL 1
   },
   {
     id: 'p2',
-    title: 'Code the Debugger — Automation Testing using Python',
-    tag: 'PYTHON WORKSHOP',
+    title: 'EUROPEAN TALENT HUNT - AI & NEXT GEN PAYMENTS',
+    tag: 'TALENT HUNT',
     // IMAGE LOCATION: Change image URL below to swap this poster artwork
-    imageUrl: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80',
+   imageUrl: "/images/acm2.jpeg", // IMAGE LOCATION: Change event poster image URL 1,
   },
   {
     id: 'p3',

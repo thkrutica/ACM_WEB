@@ -5,7 +5,6 @@ import ScrollReveal from '@/components/ScrollReveal';
 import EventCarousel, { PosterItem } from '@/components/EventCarousel';
 import { createClient } from '@/lib/supabase/server';
 import { EventItem } from '@/lib/supabase/types';
-
 export const metadata = {
   title: 'ACM Delhi Technical Campus | Events',
   description: 'Fueling Ideas, Powering Innovation. Explore workshops, hackathons, and tech sessions at ACM DTC.',
@@ -19,20 +18,18 @@ const DEFAULT_EVENT_CARDS = [
   {
     id: 'e1',
     title: 'Career Guidance — Event for Tech Enthusiasts',
-    tag: 'ACM DTC PRESENTS',
+    tag: 'ACM WEEKEND',
     description: 'Learn to shape a resume that stands out & boost your LinkedIn to attract top opportunities.',
     date: 'April 10',
-    // IMAGE LOCATION: Change event poster image URL 1
-    imageUrl: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80',
+    imageUrl: "/images/acm1.jpeg", // IMAGE LOCATION: Change event poster image URL 1
   },
   {
     id: 'e2',
-    title: 'Code the Debugger — Automation Testing using Python',
-    tag: 'PYTHON WORKSHOP',
-    description: 'Hands-on guide to automated testing workflows and unit testing with Python.',
-    date: 'March 28',
-    // IMAGE LOCATION: Change event poster image URL 2
-    imageUrl: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80',
+    title: 'EUROPEAN TALENT HUNT - AI & NEXT GEN PAYMENTS',
+    tag: 'TALENT HUNT',
+    description: 'Next Gen Payments With AI.',
+    date: 'JULY 17 - 19',
+    imageUrl: "/images/acm2.jpeg",
   },
   {
     id: 'e3',
