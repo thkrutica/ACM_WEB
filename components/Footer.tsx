@@ -63,19 +63,19 @@ export default function Footer() {
           <ul className="space-y-2 text-xs font-semibold text-white/80">
             <li className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-[#1090ff]"></span>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-[#2fe1ff] transition-colors">
+              <a href="https://www.linkedin.com/company/acm-student-chapter-delhi-technical-campus-ggsipu/" target="_blank" rel="noreferrer" className="hover:text-[#2fe1ff] transition-colors">
                 LinkedIn
               </a>
             </li>
             <li className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-[#1090ff]"></span>
-              <a href="https://x.com" target="_blank" rel="noreferrer" className="hover:text-[#2fe1ff] transition-colors">
+              <a href="https://x.com/ACM_DTC?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcAThRxtwZG9mAmV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzU2NzA2NzM0MzM1MjQyNwABp3XvfH9GjEoGfJuQeHuu0KPjzdLZeBDiGVHZEGk8IZ5VYi0lL0q8Ftjky4cB_aem_vjLVoo4GnMsKOR4VayhcDg" target="_blank" rel="noreferrer" className="hover:text-[#2fe1ff] transition-colors">
                 X (Twitter)
               </a>
             </li>
             <li className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-[#1090ff]"></span>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-[#2fe1ff] transition-colors">
+              <a href="https://www.instagram.com/acm_dtc?igsh=MXBremE2eWtxbGZ2dQ==" target="_blank" rel="noreferrer" className="hover:text-[#2fe1ff] transition-colors">
                 Instagram
               </a>
             </li>

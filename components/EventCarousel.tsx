@@ -60,7 +60,7 @@ export default function EventCarousel({ items = DEFAULT_POSTERS }: { items?: Pos
 
   let animationFrame: number;
 
-  const speed = 3;
+  const speed = 2;
 
   const animate = () => {
     if (!container) return;

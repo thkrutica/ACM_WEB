@@ -7,6 +7,7 @@ import EventCarousel from '@/components/EventCarousel';
 import NewsletterForm from '@/components/NewsletterForm';
 import { createClient } from '@/lib/supabase/server';
 import { EventItem } from '@/lib/supabase/types';
+import { FaInstagram } from "react-icons/fa";
 
 // Force dynamic rendering to query live events from Supabase on request
 export const dynamic = 'force-dynamic';
@@ -63,9 +64,17 @@ export default async function HomePage() {
               <span className="w-24 h-[1px] bg-white/20"></span>
             </div>
             <div className="flex gap-2" aria-label="Social links">
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg border border-white/20 bg-white/5 flex items-center justify-center text-xs font-bold text-[#1090ff] hover:bg-[#1090ff] hover:text-white transition-all" aria-label="LinkedIn">in</a>
-              <a href="https://x.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg border border-white/20 bg-white/5 flex items-center justify-center text-xs font-bold text-[#1090ff] hover:bg-[#1090ff] hover:text-white transition-all" aria-label="X">X</a>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg border border-white/20 bg-white/5 flex items-center justify-center text-xs font-bold text-[#1090ff] hover:bg-[#1090ff] hover:text-white transition-all" aria-label="Instagram">◎</a>
+              <a href="https://www.linkedin.com/company/acm-student-chapter-delhi-technical-campus-ggsipu/" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg border border-white/20 bg-white/5 flex items-center justify-center text-xs font-bold text-[#1090ff] hover:bg-[#1090ff] hover:text-white transition-all" aria-label="LinkedIn">in</a>
+              <a href="https://x.com/ACM_DTC?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcAThRxtwZG9mAmV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzU2NzA2NzM0MzM1MjQyNwABp3XvfH9GjEoGfJuQeHuu0KPjzdLZeBDiGVHZEGk8IZ5VYi0lL0q8Ftjky4cB_aem_vjLVoo4GnMsKOR4VayhcDg" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg border border-white/20 bg-white/5 flex items-center justify-center text-xs font-bold text-[#1090ff] hover:bg-[#1090ff] hover:text-white transition-all" aria-label="X">X</a>
+              <a
+  href="https://www.instagram.com/acm_dtc?igsh=MXBremE2eWtxbGZ2dQ=="
+  target="_blank"
+  rel="noreferrer"
+  className="w-8 h-8 rounded-lg border border-white/20 bg-white/5 flex items-center justify-center text-[#1090ff] hover:bg-[#1090ff] hover:text-white transition-all"
+  aria-label="Instagram"
+>
+  <FaInstagram size={18} />
+</a>
             </div>
           </div>
         </div>

@@ -22,10 +22,10 @@ export default function AboutPage() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             
             {/* Robot Illustration Left */}
-            <div className="w-32 h-32 shrink-0">
+            <div className="w-64 h-64 shrink-0">
               {/* IMAGE LOCATION: Replace left robot image URL below */}
               <img
-                src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=400&q=80"
+                src="/images/robo_right.png"
                 alt="3D Robot Mascot Left"
                 className="w-full h-full object-contain filter drop-shadow-[0_0_15px_rgba(47,225,255,0.4)]"
               />
@@ -43,10 +43,10 @@ export default function AboutPage() {
             </div>
 
             {/* Robot Illustration Right */}
-            <div className="w-32 h-32 shrink-0">
+            <div className="w-64 h-64 shrink-0">
               {/* IMAGE LOCATION: Replace right robot image URL below */}
               <img
-                src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=400&q=80"
+                src="/images/robo_left.png"
                 alt="3D Robot Mascot Right"
                 className="w-full h-full object-contain filter drop-shadow-[0_0_15px_rgba(47,225,255,0.4)]"
               />
@@ -78,19 +78,13 @@ export default function AboutPage() {
           <div className="md:col-span-6">
             <div className="relative rounded-2xl overflow-hidden border border-white/20 shadow-2xl group cursor-pointer">
               {/* IMAGE LOCATION: Replace video thumbnail photo below */}
-              <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
-                alt="Student Lead Video Thumbnail"
-                className="w-full h-64 md:h-80 object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-              {/* END IMAGE LOCATION */}
-
-              {/* Play Button Overlay */}
-              <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                <div className="w-16 h-16 rounded-full bg-[#1090ff] text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                  ▶
-                </div>
-              </div>
+             <iframe
+  className="w-full h-80 rounded-2xl"
+  src="https://www.youtube.com/embed/4-m8KYYdaWc?rel=0"
+  title="About ACM"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+/>
             </div>
           </div>
 
