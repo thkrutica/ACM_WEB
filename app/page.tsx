@@ -281,7 +281,7 @@ export default async function HomePage() {
             </h2>
 
             <div className="border-l-2 border-[#1090ff] pl-4 space-y-1">
-              <h3 className="text-xl font-bold text-white">Ishank Gupta</h3>
+              <h3 className="text-xl font-bold text-white">Ishan Gupta</h3>
               <p className="text-xs font-semibold text-[#2fe1ff] uppercase tracking-wider">Chapter President</p>
             </div>
 
