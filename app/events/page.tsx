@@ -107,7 +107,7 @@ export default async function EventsPage() {
                   <img
                     src={evt.imageUrl}
                     alt={evt.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
                   />
                   {/* END IMAGE LOCATION */}
                   <span className="absolute top-2 left-2 text-[9px] font-extrabold text-[#2fe1ff] bg-black/80 px-2 py-0.5 rounded border border-[#2fe1ff]/30">
@@ -137,7 +137,7 @@ export default async function EventsPage() {
               {dbEvents.map((dbEvt) => (
                 <div key={dbEvt.id} className="card">
                   {dbEvt.image_url && (
-                    <img src={dbEvt.image_url} alt={dbEvt.title} className="w-full h-36 object-cover rounded-xl mb-2" />
+                    <img src={dbEvt.image_url} alt={dbEvt.title} className="w-full h-36 object-cover object-center rounded-xl mb-2" />
                   )}
                   <h4 className="font-bold text-white">{dbEvt.title}</h4>
                   <p className="text-xs text-white/70">{dbEvt.description}</p>

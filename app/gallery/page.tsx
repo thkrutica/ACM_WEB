@@ -79,7 +79,7 @@ export default function GalleryPage() {
          With left & right arrow controls and photo caption overlay
          =================================================================== */}
       <ScrollReveal className="section">
-        <div className="relative max-w-5xl mx-auto rounded-3xl overflow-hidden border border-white/20 shadow-2xl bg-black/80">
+        <div className="relative max-w-5xl mx-auto rounded-3xl overflow-hidden border border-white/20 shadow-2xl bg-black">
           
           {/* Main Photo Display */}
           <div className="relative h-[380px] md:h-[500px] w-full">
@@ -87,7 +87,7 @@ export default function GalleryPage() {
             <img
               src={currentPhoto.imageUrl}
               alt={currentPhoto.title}
-              className="w-full h-full object-cover transition-all duration-500"
+              className="w-full h-full object-cover object-center transition-all duration-500"
             />
             {/* END IMAGE LOCATION */}
 
@@ -133,7 +133,7 @@ export default function GalleryPage() {
               }`}
             >
               {/* IMAGE LOCATION: Replace thumbnail image URL */}
-              <img src={photo.imageUrl} alt={photo.title} className="w-full h-full object-cover" />
+              <img src={photo.imageUrl} alt={photo.title} className="w-full h-full object-cover object-center" />
             </button>
           ))}
         </div>

@@ -20,7 +20,7 @@ export default function JoinUsCard() {
           <img
             src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=600&q=80"
             alt="Glowing Saturn Planet Visual"
-            className="w-56 h-56 object-cover rounded-full relative z-10 border-2 border-[#2fe1ff]/40 shadow-[0_0_50px_rgba(141,66,255,0.5)]"
+            className="w-56 h-56 object-cover object-center rounded-full relative z-10 border-2 border-[#2fe1ff]/40 shadow-[0_0_50px_rgba(141,66,255,0.5)]"
           />
         </div>
       </div>

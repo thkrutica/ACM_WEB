@@ -172,7 +172,7 @@ export default function AboutPage() {
               <img
                 src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80"
                 alt="ACM Chapter Members Group"
-                className="w-full h-72 object-cover"
+                className="w-full h-72 object-cover object-center"
               />
               {/* END IMAGE LOCATION */}
             </div>

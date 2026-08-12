@@ -69,6 +69,7 @@ img {
   background:
     radial-gradient(circle at 50% 0%, rgba(16, 144, 255, 0.06), transparent 30%),
     rgba(3, 5, 10, 0.96);
+  background-size: 100% 100%, 100% 100%;
   box-shadow: var(--shadow);
   overflow: hidden;
 }

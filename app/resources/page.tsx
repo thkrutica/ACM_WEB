@@ -32,11 +32,11 @@ export default async function ResourcesPage() {
          SECTION 1: HERO HEADER
          Curated resources to power your tech journey
          =================================================================== */}
-      <ScrollReveal className="section text-center max-w-4xl mx-auto space-y-3">
-        <h1 className="text-3xl md:text-6xl font-black text-white tracking-tight">
+      <ScrollReveal className="section text-left max-w-4xl mx-auto space-y-4">
+        <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
           Curated resources to power your tech journey
         </h1>
-        <p className="text-sm md:text-base text-white/70">
+        <p className="text-base md:text-lg text-white/70">
           Hand-picked cheat sheets, technical slides, research papers, and guides to help students learn and build.
         </p>
       </ScrollReveal>
@@ -55,14 +55,14 @@ export default async function ResourcesPage() {
               <img
                 src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80"
                 alt="Power BI Resources"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
               />
               {/* END IMAGE LOCATION */}
             </div>
-            <div>
-              <span className="text-[10px] font-extrabold text-[#2fe1ff] uppercase tracking-widest block mb-1">GUIDE</span>
-              <h3 className="text-base font-bold text-white uppercase">POWER BI RESOURCES</h3>
-              <p className="text-xs text-white/60 mt-1">Data modeling, DAX queries, and dashboard blueprints.</p>
+            <div className="text-center flex flex-col items-center">
+              <span className="text-xs font-black text-[#2fe1ff] uppercase tracking-widest block mb-2">GUIDE</span>
+              <h3 className="text-lg font-black text-white uppercase">POWER BI RESOURCES</h3>
+              <p className="text-sm font-medium text-white/70 mt-2">Data modeling, DAX queries, and dashboard blueprints.</p>
             </div>
           </div>
 
@@ -73,14 +73,14 @@ export default async function ResourcesPage() {
               <img
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80"
                 alt="SQL Basics Cheat Sheet"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
               />
               {/* END IMAGE LOCATION */}
             </div>
-            <div>
-              <span className="text-[10px] font-extrabold text-[#2fe1ff] uppercase tracking-widest block mb-1">CHEAT SHEET</span>
-              <h3 className="text-base font-bold text-white uppercase">SQL CHEAT SHEET</h3>
-              <p className="text-xs text-white/60 mt-1">Essential queries, JOINs, aggregations, and database commands.</p>
+            <div className="text-center flex flex-col items-center">
+              <span className="text-xs font-black text-[#2fe1ff] uppercase tracking-widest block mb-2">CHEAT SHEET</span>
+              <h3 className="text-lg font-black text-white uppercase">SQL CHEAT SHEET</h3>
+              <p className="text-sm font-medium text-white/70 mt-2">Essential queries, JOINs, aggregations, and database commands.</p>
             </div>
           </div>
 
@@ -91,14 +91,14 @@ export default async function ResourcesPage() {
               <img
                 src="https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&w=400&q=80"
                 alt="Six Sigma Guidance"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
               />
               {/* END IMAGE LOCATION */}
             </div>
-            <div>
-              <span className="text-[10px] font-extrabold text-[#2fe1ff] uppercase tracking-widest block mb-1">NOTES</span>
-              <h3 className="text-base font-bold text-white uppercase">SIX SIGMA GUIDANCE</h3>
-              <p className="text-xs text-white/60 mt-1">Quality management, error reduction, and workflow optimization.</p>
+            <div className="text-center flex flex-col items-center">
+              <span className="text-xs font-black text-[#2fe1ff] uppercase tracking-widest block mb-2">NOTES</span>
+              <h3 className="text-lg font-black text-white uppercase">SIX SIGMA GUIDANCE</h3>
+              <p className="text-sm font-medium text-white/70 mt-2">Quality management, error reduction, and workflow optimization.</p>
             </div>
           </div>
 
@@ -109,14 +109,14 @@ export default async function ResourcesPage() {
               <img
                 src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=400&q=80"
                 alt="Top 50 Excel Questions"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
               />
               {/* END IMAGE LOCATION */}
             </div>
-            <div>
-              <span className="text-[10px] font-extrabold text-[#2fe1ff] uppercase tracking-widest block mb-1">INTERVIEW PREP</span>
-              <h3 className="text-base font-bold text-white uppercase">TOP 50 EXCEL QUESTIONS</h3>
-              <p className="text-xs text-white/60 mt-1">VLOOKUP, Pivot Tables, and data analysis interview prep.</p>
+            <div className="text-center flex flex-col items-center">
+              <span className="text-xs font-black text-[#2fe1ff] uppercase tracking-widest block mb-2">INTERVIEW PREP</span>
+              <h3 className="text-lg font-black text-white uppercase">TOP 50 EXCEL QUESTIONS</h3>
+              <p className="text-sm font-medium text-white/70 mt-2">VLOOKUP, Pivot Tables, and data analysis interview prep.</p>
             </div>
           </div>
 

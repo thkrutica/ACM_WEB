@@ -107,7 +107,7 @@ export default function EventCarousel({ items = DEFAULT_POSTERS }: { items?: Pos
             <img
   src={poster.imageUrl}
   alt={poster.title}
-  className="w-full h-full object-cover transition-transform duration-500"
+  className="w-full h-full object-cover object-center transition-transform duration-500"
   style={{
     transform: "translateZ(40px)",
   }}

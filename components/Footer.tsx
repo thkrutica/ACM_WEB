@@ -14,14 +14,14 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 mb-10">
         
         {/* COLUMN 1: Logo & Chapter Overview Paragraph */}
-        <div className="md:col-span-5 space-y-4">
-          <div className="flex items-center gap-3">
+        <div className="md:col-span-5 space-y-4 flex flex-col items-start text-left">
+          <div className="flex items-center justify-start gap-3">
             {/* Logo Mark Graphic */}
             <div className="relative w-9 h-9 rotate-45 border-2 border-[#2fe1ff] shadow-[0_0_15px_rgba(47,225,255,0.4)] flex items-center justify-center">
               <div className="w-5 h-5 border-2 border-[#1090ff]"></div>
             </div>
             {/* Brand Title */}
-            <div>
+            <div className="text-left">
               <span className="text-xs font-bold uppercase tracking-wider text-[#2fe1ff] block">ACM CHAPTER</span>
               <span className="text-sm font-extrabold text-white">DELHI TECHNICAL CAMPUS</span>
             </div>
@@ -33,9 +33,9 @@ export default function Footer() {
         </div>
 
         {/* COLUMN 2: Quick Links */}
-        <div className="md:col-span-3 space-y-3">
-          <h4 className="text-xs font-extrabold tracking-widest text-[#1090ff] uppercase">QUICK LINKS</h4>
-          <ul className="space-y-2 text-xs font-semibold text-white/80">
+        <div className="md:col-span-3 space-y-4 flex flex-col items-start text-left">
+          <h4 className="text-sm font-black tracking-widest text-[#1090ff] uppercase">QUICK LINKS</h4>
+          <ul className="space-y-2.5 text-sm font-bold text-white/80 flex flex-col items-start">
             <li>
               <Link href="/" className="hover:text-[#2fe1ff] transition-colors">Home</Link>
             </li>
@@ -58,28 +58,28 @@ export default function Footer() {
         </div>
 
         {/* COLUMN 3: Contact Channels */}
-        <div className="md:col-span-4 space-y-3">
-          <h4 className="text-xs font-extrabold tracking-widest text-[#1090ff] uppercase">CONTACT US AT</h4>
-          <ul className="space-y-2 text-xs font-semibold text-white/80">
-            <li className="flex items-center gap-2">
+        <div className="md:col-span-4 space-y-4 flex flex-col items-start text-left">
+          <h4 className="text-sm font-black tracking-widest text-[#1090ff] uppercase">CONTACT US AT</h4>
+          <ul className="space-y-2.5 text-sm font-bold text-white/80 flex flex-col items-start">
+            <li className="flex items-center gap-2.5">
               <span className="w-1.5 h-1.5 rounded-full bg-[#1090ff]"></span>
               <a href="https://www.linkedin.com/company/acm-student-chapter-delhi-technical-campus-ggsipu/" target="_blank" rel="noreferrer" className="hover:text-[#2fe1ff] transition-colors">
                 LinkedIn
               </a>
             </li>
-            <li className="flex items-center gap-2">
+            <li className="flex items-center gap-2.5">
               <span className="w-1.5 h-1.5 rounded-full bg-[#1090ff]"></span>
               <a href="https://x.com/ACM_DTC?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcAThRxtwZG9mAmV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzU2NzA2NzM0MzM1MjQyNwABp3XvfH9GjEoGfJuQeHuu0KPjzdLZeBDiGVHZEGk8IZ5VYi0lL0q8Ftjky4cB_aem_vjLVoo4GnMsKOR4VayhcDg" target="_blank" rel="noreferrer" className="hover:text-[#2fe1ff] transition-colors">
                 X (Twitter)
               </a>
             </li>
-            <li className="flex items-center gap-2">
+            <li className="flex items-center gap-2.5">
               <span className="w-1.5 h-1.5 rounded-full bg-[#1090ff]"></span>
               <a href="https://www.instagram.com/acm_dtc?igsh=MXBremE2eWtxbGZ2dQ==" target="_blank" rel="noreferrer" className="hover:text-[#2fe1ff] transition-colors">
                 Instagram
               </a>
             </li>
-            <li className="flex items-center gap-2">
+            <li className="flex items-center gap-2.5">
               <span className="w-1.5 h-1.5 rounded-full bg-[#1090ff]"></span>
               <a href="mailto:acmstudentchapter@delhitechnicalcampus.ac.in" className="hover:text-[#2fe1ff] transition-colors">
                 Email Us
@@ -94,7 +94,7 @@ export default function Footer() {
          BOTTOM COPYRIGHT & ADMIN LINK
          ------------------------------------------------------------------- */}
       <div className="max-w-7xl mx-auto pt-6 border-t border-white/10 flex flex-wrap items-center justify-between gap-4 text-[11px] text-white/50 font-medium">
-        <p>&copy; 2025, DTC ACM STUDENT CHAPTER</p>
+        <p>&copy; 2026-27, DTC ACM STUDENT CHAPTER</p>
         <Link href="/admin" className="hover:text-[#1090ff] transition-colors underline">
           Admin Portal
         </Link>

@@ -9,6 +9,82 @@ export const metadata = {
   description: 'Meet the student chairs, technical leads, and mentors driving the ACM DTC chapter forward.',
 };
 
+export interface TeamMember {
+  id: string;
+  name: string;
+  role: string;
+  imageUrl: string;
+  linkedin?: string;
+  email?: string;
+}
+
+const EXTENDED_TEAM: TeamMember[] = [
+  {
+    id: 't1',
+    name: 'Aarav Sharma',
+    role: 'TECHNICAL HEAD',
+    imageUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80',
+    linkedin: '#',
+    email: 'mailto:aarav@example.com'
+  },
+  {
+    id: 't2',
+    name: 'Priya Patel',
+    role: 'DESIGN LEAD',
+    imageUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80',
+    linkedin: '#',
+    email: 'mailto:priya@example.com'
+  },
+  {
+    id: 't3',
+    name: 'Rohan Gupta',
+    role: 'PR & OUTREACH',
+    imageUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80',
+    linkedin: '#',
+    email: 'mailto:rohan@example.com'
+  },
+  {
+    id: 't4',
+    name: 'Neha Singh',
+    role: 'EVENT COORDINATOR',
+    imageUrl: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80',
+    linkedin: '#',
+    email: 'mailto:neha@example.com'
+  },
+  {
+    id: 't5',
+    name: 'Vikram Mehta',
+    role: 'WEB DEVELOPER',
+    imageUrl: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80',
+    linkedin: '#',
+    email: 'mailto:vikram@example.com'
+  },
+  {
+    id: 't6',
+    name: 'Anjali Verma',
+    role: 'CONTENT STRATEGIST',
+    imageUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80',
+    linkedin: '#',
+    email: 'mailto:anjali@example.com'
+  },
+  {
+    id: 't7',
+    name: 'Kabir Singh',
+    role: 'LOGISTICS COORDINATOR',
+    imageUrl: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80',
+    linkedin: '#',
+    email: 'mailto:kabir@example.com'
+  },
+  {
+    id: 't8',
+    name: 'Meera Rao',
+    role: 'SOCIAL MEDIA LEAD',
+    imageUrl: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80',
+    linkedin: '#',
+    email: 'mailto:meera@example.com'
+  }
+];
+
 export default function TeamPage() {
   return (
     <div className="team-page space-y-12 py-6">
@@ -30,8 +106,65 @@ export default function TeamPage() {
          SECTION 2: INTERACTIVE LEADERSHIP SLIDER
          Features diagonal cut photo accent, quotes, and navigation arrows matching video
          =================================================================== */}
-      <ScrollReveal className="section">
+      <ScrollReveal className="max-w-5xl mx-auto w-full px-4">
         <TeamSlider />
+      </ScrollReveal>
+
+      {/* ===================================================================
+         SECTION 3: EXTENDED TEAM GRID
+         Glassmorphism hover cards for coordinators and mentors
+         =================================================================== */}
+      <ScrollReveal className="max-w-6xl mx-auto w-full px-4 pb-12">
+        <div className="mt-20">
+          <div className="text-center mb-12 space-y-2">
+            <h3 className="text-2xl md:text-4xl font-black text-white uppercase tracking-wider">
+              COORDINATORS & MENTORS
+            </h3>
+            <p className="text-sm text-white/60">
+              The brilliant minds keeping the chapter running smoothly.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {EXTENDED_TEAM.map((member) => (
+              <div 
+                key={member.id} 
+                className="group relative rounded-3xl bg-[#0a0e1a] border border-white/10 overflow-hidden hover:border-[#2fe1ff]/50 hover:shadow-[0_0_30px_rgba(47,225,255,0.15)] transition-all duration-300 flex flex-col cursor-pointer"
+              >
+                {/* Image Section */}
+                <div className="relative h-64 w-full overflow-hidden bg-black">
+                  <img 
+                    src={member.imageUrl} 
+                    alt={member.name} 
+                    className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500 opacity-90 group-hover:opacity-100"
+                  />
+                  {/* Overlay Gradient for Text readability */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a0e1a] via-[#0a0e1a]/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                {/* Info Section */}
+                <div className="p-6 pt-0 relative z-10 -mt-8">
+                  <h4 className="text-xl font-bold text-white mb-1 group-hover:text-[#2fe1ff] transition-colors">{member.name}</h4>
+                  <span className="text-xs font-bold text-[#1090ff] tracking-widest uppercase block">{member.role}</span>
+                  
+                  {/* Hover Drawer for Social Icons */}
+                  <div className="mt-4 flex gap-3 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                    {member.linkedin && (
+                      <a href={member.linkedin} target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/70 hover:bg-[#1090ff] hover:text-white hover:border-[#1090ff] transition-colors">
+                        in
+                      </a>
+                    )}
+                    {member.email && (
+                      <a href={member.email} className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/70 hover:bg-[#1090ff] hover:text-white hover:border-[#1090ff] transition-colors">
+                        ✉
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </ScrollReveal>
 
     </div>
