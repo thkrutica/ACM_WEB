@@ -1,7 +1,6 @@
-'use client';
+//NAVIGATION BAR WITH FINE TUNING
 
-// Header component: Fixed floating single-container glassmorphism navigation header.
-// Blends logo, nav links, and Join Us CTA into one clean floating glass bar with enlarged, highly readable typography.
+'use client';
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -9,104 +8,66 @@ import { usePathname } from 'next/navigation';
 export default function Header() {
   const pathname = usePathname();
 
-  // Helper to determine active navigation route
-  const isActive = (path: string) => {
-    if (path === '/' && pathname === '/') return true;
-    if (path !== '/' && pathname.startsWith(path)) return true;
-    return false;
-  };
+  const navLinks = [
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'Events', href: '/events' },
+    { name: 'Gallery', href: '/gallery' },
+    { name: 'Team', href: '/team' },
+    { name: 'Resources', href: '/resources' },
+  ];
 
   return (
-    <header className="sticky top-4 z-50 w-[min(94%,1400px)] mx-auto px-4 py-3 rounded-full bg-white/[0.09] backdrop-blur-2xl border border-white/20 shadow-[0_12px_40px_rgba(0,0,0,0.65)] flex items-center justify-between gap-6 transition-all">
-      
-      {/* -------------------------------------------------------------------
-         LEFT BRAND LOGO & TITLE (Enlarged typography for clear readability)
-         ------------------------------------------------------------------- */}
-      <Link href="/" className="brand inline-flex items-center gap-3.5 pl-2 group" aria-label="ACM Delhi Technical Campus home">
-        <span className="brand-mark relative w-10 h-10 rotate-45 border-2 border-[#2fe1ff] shadow-[0_0_16px_rgba(47,225,255,0.5)] flex items-center justify-center transition-transform group-hover:scale-105">
-          <span className="w-5 h-5 border-2 border-[#1090ff]"></span>
-        </span>
-        <span className="brand-copy flex flex-col leading-tight font-extrabold text-white text-sm">
-          <span className="brand-title tracking-wide text-white/90">Association for</span>
-          <span className="brand-title text-white">Computing Machinery</span>
-        </span>
-      </Link>
+    <header className="w-full max-w-[1440px] mx-auto px-6 md:px-10 py-6 flex items-center justify-between z-50 relative">
 
-      {/* -------------------------------------------------------------------
-         CENTER NAV LINKS (Single-level glass pill blended seamlessly)
-         ------------------------------------------------------------------- */}
-      <nav className="hidden md:flex items-center gap-1.5 p-1 rounded-full text-sm font-bold">
-        <Link
-          href="/"
-          className={`px-5 py-2.5 rounded-full transition-all duration-200 ${
-            isActive('/')
-              ? 'bg-gradient-to-r from-[#1090ff] to-[#8d42ff] text-white shadow-[0_0_20px_rgba(141,66,255,0.6)] font-extrabold scale-105'
-              : 'text-white/80 hover:text-white hover:bg-white/10'
-          }`}
-        >
-          Home
-        </Link>
-        <Link
-          href="/about"
-          className={`px-5 py-2.5 rounded-full transition-all duration-200 ${
-            isActive('/about')
-              ? 'bg-gradient-to-r from-[#1090ff] to-[#8d42ff] text-white shadow-[0_0_20px_rgba(141,66,255,0.6)] font-extrabold scale-105'
-              : 'text-white/80 hover:text-white hover:bg-white/10'
-          }`}
-        >
-          About
-        </Link>
-        <Link
-          href="/events"
-          className={`px-5 py-2.5 rounded-full transition-all duration-200 ${
-            isActive('/events')
-              ? 'bg-gradient-to-r from-[#1090ff] to-[#8d42ff] text-white shadow-[0_0_20px_rgba(141,66,255,0.6)] font-extrabold scale-105'
-              : 'text-white/80 hover:text-white hover:bg-white/10'
-          }`}
-        >
-          Events
-        </Link>
-        <Link
-          href="/gallery"
-          className={`px-5 py-2.5 rounded-full transition-all duration-200 ${
-            isActive('/gallery')
-              ? 'bg-gradient-to-r from-[#1090ff] to-[#8d42ff] text-white shadow-[0_0_20px_rgba(141,66,255,0.6)] font-extrabold scale-105'
-              : 'text-white/80 hover:text-white hover:bg-white/10'
-          }`}
-        >
-          Gallery
-        </Link>
-        <Link
-          href="/team"
-          className={`px-5 py-2.5 rounded-full transition-all duration-200 ${
-            isActive('/team')
-              ? 'bg-gradient-to-r from-[#1090ff] to-[#8d42ff] text-white shadow-[0_0_20px_rgba(141,66,255,0.6)] font-extrabold scale-105'
-              : 'text-white/80 hover:text-white hover:bg-white/10'
-          }`}
-        >
-          Team
-        </Link>
-        <Link
-          href="/resources"
-          className={`px-5 py-2.5 rounded-full transition-all duration-200 ${
-            isActive('/resources')
-              ? 'bg-gradient-to-r from-[#1090ff] to-[#8d42ff] text-white shadow-[0_0_20px_rgba(141,66,255,0.6)] font-extrabold scale-105'
-              : 'text-white/80 hover:text-white hover:bg-white/10'
-          }`}
-        >
-          Resources
-        </Link>
-      </nav>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[150px] bg-cyan-600/10 blur-[100px] pointer-events-none z-[-1]"></div>
 
-      {/* -------------------------------------------------------------------
-         RIGHT ACTION BUTTON (JOIN US →)
-         ------------------------------------------------------------------- */}
-      <Link
-        href="/contact"
-        className="join-button inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-gradient-to-r from-[#1090ff] to-[#8d42ff] text-white text-sm font-extrabold shadow-[0_0_20px_rgba(141,66,255,0.5)] hover:brightness-110 hover:scale-105 transition-all mr-1"
-      >
-        Join Us &rarr;
-      </Link>
+      <div className="flex-1 flex justify-start items-center relative z-20">
+        <Link href="/" className="flex items-center gap-4 group min-w-max" aria-label="ACM Delhi Technical Campus home">
+          <img src="/ACM_Logo.png" alt="ACM Logo" className="w-16 h-16 md:w-20 md:h-20 object-contain drop-shadow-lg group-hover:scale-105 transition-transform duration-500" />
+          <span className="hidden lg:flex flex-col leading-tight font-extrabold text-white text-[13px] tracking-[0.05em] group-hover:text-gray-300 transition-colors duration-300">
+            <span>Association for</span>
+            <span>Computing Machinery</span>
+          </span>
+        </Link>
+      </div>
+
+      <div className="hidden md:flex flex-none justify-center relative z-20">
+        <nav className="relative flex items-center gap-1 bg-gradient-to-b from-white/[0.08] to-black/30 backdrop-blur-3xl border border-white/10 border-t-white/30 rounded-full px-5 py-2.5 shadow-[inset_0_1px_1px_rgba(255,255,255,0.3),0_20px_40px_rgba(0,0,0,0.6)] overflow-hidden group">
+          
+          <div className="absolute inset-y-0 -left-[150%] w-[150%] bg-gradient-to-r from-transparent via-white/10 to-transparent animate-[shimmer_4s_infinite] pointer-events-none"></div>
+
+          {navLinks.map((link) => {
+            const isActive = pathname === link.href;
+            return (
+              <Link
+                key={link.name}
+                href={link.href}
+                className={`relative px-5 py-2 rounded-full transition-all duration-300 flex items-center justify-center group/link ${
+                  isActive ? 'bg-white/[0.06] text-white' : 'text-gray-300 hover:text-white hover:bg-white/[0.04]'
+                }`}
+              >
+                <span className="text-[13px] font-bold tracking-wider relative z-10">{link.name}</span>
+                <div
+                  className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-[2px] bg-cyan-400 transition-all duration-300 shadow-[0_0_10px_#2fe1ff] ${
+                    isActive ? 'w-1/2' : 'w-0 group-hover/link:w-1/2 opacity-0 group-hover/link:opacity-100'
+                  }`}
+                ></div>
+              </Link>
+            );
+          })}
+        </nav>
+      </div>
+
+      <div className="flex-1 flex justify-end items-center relative z-20">
+        <Link
+          href="/contact"
+          className="group relative flex items-center justify-center px-8 py-2.5 rounded-full bg-gradient-to-b from-[#183c70]/90 to-[#0e2547]/90 backdrop-blur-xl border border-white/15 border-t-white/40 shadow-[inset_0_1px_2px_rgba(255,255,255,0.4),0_10px_25px_rgba(0,0,0,0.5)] transition-all duration-300 hover:scale-105 hover:from-[#1d4886]/90 hover:to-[#122e57]/90 hover:border-t-white/60 hover:shadow-[0_0_20px_rgba(30,90,170,0.4)] overflow-hidden"
+        >
+          <div className="absolute inset-y-0 -left-[150%] w-[150%] bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:translate-x-[200%] transition-transform duration-[1200ms] ease-in-out pointer-events-none"></div>
+          <span className="relative z-10 text-white font-bold tracking-widest text-[12px] uppercase drop-shadow">Join Us</span>
+        </Link>
+      </div>
 
     </header>
   );

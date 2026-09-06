@@ -61,6 +61,8 @@ img {
    Rounded dark laptop frame container with top spotlight glow effect.
    ========================================================================= */
 .page-shell {
+  display:flex;
+  flex-direction: column;
   width: min(95vw, 1440px);
   min-height: calc(100vh - 2rem);
   margin: 1rem auto;
@@ -69,13 +71,13 @@ img {
   background:
     radial-gradient(circle at 50% 0%, rgba(16, 144, 255, 0.06), transparent 30%),
     rgba(3, 5, 10, 0.96);
-  background-size: 100% 100%, 100% 100%;
   box-shadow: var(--shadow);
   overflow: hidden;
 }
 
 .site-main {
-  padding: 0 2rem 2.5rem;
+  flex: 1;
+  padding: 0 2rem 0;
 }
 
 /* =========================================================================
@@ -173,16 +175,9 @@ img {
 .carousel-3d-container {
   perspective: 1000px;
   overflow-x: auto;
-
-  /* Hide scrollbar */
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-
+  scrollbar-width: thin;
+  scrollbar-color: rgba(16, 144, 255, 0.4) transparent;
   padding: 2rem 0;
-}
-
-.carousel-3d-container::-webkit-scrollbar {
-  display: none;
 }
 
 .carousel-3d-track {
@@ -204,8 +199,8 @@ img {
 }
 
 .carousel-3d-card:hover {
-    transform: perspective(1200px) rotateY(-15deg) rotateX(8deg) scale(1.05);
-    border-color: rgba(16, 144, 255, 0.8);
+  transform: scale(1.05) translateZ(20px);
+  border-color: rgba(16, 144, 255, 0.8);
 }
 
 /* =========================================================================
@@ -241,6 +236,6 @@ img {
   }
 
   .site-main {
-    padding: 0 1.2rem 2rem;
+    padding: 0 1.2rem 0;
   }
 }

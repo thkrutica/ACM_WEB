@@ -7,7 +7,6 @@ import EventCarousel from '@/components/EventCarousel';
 import NewsletterForm from '@/components/NewsletterForm';
 import { createClient } from '@/lib/supabase/server';
 import { EventItem } from '@/lib/supabase/types';
-import { FaInstagram } from "react-icons/fa";
 
 // Force dynamic rendering to query live events from Supabase on request
 export const dynamic = 'force-dynamic';
@@ -34,15 +33,15 @@ export default async function HomePage() {
          Aligned in a 12-column grid: 7 cols copy, 5 cols visual
          =================================================================== */}
       <ScrollReveal className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center pt-4 pb-8">
-
+        
         {/* Left Column: Hero Copy & Actions */}
         <div className="lg:col-span-7 space-y-6">
           <p className="section-kicker">INSPIRING THE FUTURE OF COMPUTING AT</p>
-
+          
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.05] tracking-tight">
             ACM DELHI TECHNICAL CAMPUS
           </h1>
-
+          
           <p className="text-base text-white/80 leading-relaxed max-w-2xl">
             DTC ACM Student Chapter believes in providing a <span className="text-[#2fe1ff] font-semibold underline decoration-[#1090ff]">healthy environment</span> where creativity and imagination can flourish. Through collaboration and engagement in a plethora of technical activities and projects, we envision to build a community of like-minded people who love to code, collaborate and have fun!
           </p>
@@ -64,17 +63,9 @@ export default async function HomePage() {
               <span className="w-24 h-[1px] bg-white/20"></span>
             </div>
             <div className="flex gap-2" aria-label="Social links">
-              <a href="https://www.linkedin.com/company/acm-student-chapter-delhi-technical-campus-ggsipu/" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg border border-white/20 bg-white/5 flex items-center justify-center text-xs font-bold text-[#1090ff] hover:bg-[#1090ff] hover:text-white transition-all" aria-label="LinkedIn">in</a>
-              <a href="https://x.com/ACM_DTC?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcAThRxtwZG9mAmV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzU2NzA2NzM0MzM1MjQyNwABp3XvfH9GjEoGfJuQeHuu0KPjzdLZeBDiGVHZEGk8IZ5VYi0lL0q8Ftjky4cB_aem_vjLVoo4GnMsKOR4VayhcDg" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg border border-white/20 bg-white/5 flex items-center justify-center text-xs font-bold text-[#1090ff] hover:bg-[#1090ff] hover:text-white transition-all" aria-label="X">X</a>
-              <a
-                href="https://www.instagram.com/acm_dtc?igsh=MXBremE2eWtxbGZ2dQ=="
-                target="_blank"
-                rel="noreferrer"
-                className="w-8 h-8 rounded-lg border border-white/20 bg-white/5 flex items-center justify-center text-[#1090ff] hover:bg-[#1090ff] hover:text-white transition-all"
-                aria-label="Instagram"
-              >
-                <FaInstagram size={18} />
-              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg border border-white/20 bg-white/5 flex items-center justify-center text-xs font-bold text-[#1090ff] hover:bg-[#1090ff] hover:text-white transition-all" aria-label="LinkedIn">in</a>
+              <a href="https://x.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg border border-white/20 bg-white/5 flex items-center justify-center text-xs font-bold text-[#1090ff] hover:bg-[#1090ff] hover:text-white transition-all" aria-label="X">X</a>
+              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg border border-white/20 bg-white/5 flex items-center justify-center text-xs font-bold text-[#1090ff] hover:bg-[#1090ff] hover:text-white transition-all" aria-label="Instagram">◎</a>
             </div>
           </div>
         </div>
@@ -84,7 +75,7 @@ export default async function HomePage() {
           <div className="relative w-full max-w-[420px] aspect-square flex items-center justify-center">
             {/* Glowing Backdrop Aura */}
             <div className="absolute inset-0 bg-gradient-to-r from-[#8d42ff]/30 to-[#ff4fd8]/30 blur-3xl rounded-full"></div>
-
+            
             {/* IMAGE LOCATION: Replace VR headset illustration URL below */}
             <img
               src="https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?auto=format&fit=crop&w=800&q=80"
@@ -102,7 +93,7 @@ export default async function HomePage() {
          Aligned in a 12-column grid: 7 cols copy & list, 5 cols group image
          =================================================================== */}
       <ScrollReveal className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center py-6">
-
+        
         {/* Left Copy & Bullet List */}
         <div className="lg:col-span-7 space-y-6">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight">
@@ -174,13 +165,13 @@ export default async function HomePage() {
 
         {/* 5-Column Photo Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-
+          
           <div className="rounded-xl overflow-hidden border border-white/15 shadow-lg h-52 group">
             {/* IMAGE LOCATION: Replace team member photo 1 */}
             <img
-              src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=400&q=80"
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80"
               alt="ACM Team Member 1"
-              className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-300"
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
             {/* END IMAGE LOCATION */}
           </div>
@@ -188,9 +179,9 @@ export default async function HomePage() {
           <div className="rounded-xl overflow-hidden border border-white/15 shadow-lg h-52 group">
             {/* IMAGE LOCATION: Replace team member photo 2 */}
             <img
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=400&q=80"
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
               alt="ACM Team Member 2"
-              className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-300"
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
             {/* END IMAGE LOCATION */}
           </div>
@@ -200,7 +191,7 @@ export default async function HomePage() {
             <img
               src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80"
               alt="ACM Team Member 3"
-              className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-300"
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
             {/* END IMAGE LOCATION */}
           </div>
@@ -210,7 +201,7 @@ export default async function HomePage() {
             <img
               src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=400&q=80"
               alt="ACM Team Member 4"
-              className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-300"
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
             {/* END IMAGE LOCATION */}
           </div>
@@ -220,7 +211,7 @@ export default async function HomePage() {
             <img
               src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80"
               alt="ACM Team Member 5"
-              className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-300"
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
             {/* END IMAGE LOCATION */}
           </div>
@@ -256,11 +247,11 @@ export default async function HomePage() {
       <ScrollReveal className="py-6">
         <div className="max-w-5xl mx-auto p-8 md:p-12 rounded-3xl bg-black/60 border border-white/15 relative overflow-hidden text-center shadow-2xl">
           <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#1090ff_1px,transparent_1px)] [background-size:16px_16px]"></div>
-
+          
           <h2 className="text-2xl md:text-4xl font-extrabold text-white uppercase tracking-wider mb-4 relative z-10">
             AWARDS AND ACHIEVEMENTS
           </h2>
-
+          
           <p className="text-sm md:text-base text-white/70 max-w-2xl mx-auto relative z-10 leading-relaxed">
             Recognized by ACM India for outstanding chapter activities, student engagement, and technical excellence across national hackathons and symposiums.
           </p>
@@ -273,15 +264,15 @@ export default async function HomePage() {
          =================================================================== */}
       <ScrollReveal className="py-6">
         <div className="max-w-4xl mx-auto p-8 md:p-10 rounded-3xl bg-gradient-to-r from-black/80 to-[#070b14] border border-white/15 grid grid-cols-1 md:grid-cols-12 gap-8 items-center shadow-2xl">
-
+          
           {/* Left Content */}
           <div className="md:col-span-7 space-y-4">
             <h2 className="text-2xl md:text-4xl font-black text-white uppercase">
               MEET OUR <span className="text-[#1090ff]">PRESIDENT</span>
             </h2>
-
+            
             <div className="border-l-2 border-[#1090ff] pl-4 space-y-1">
-              <h3 className="text-xl font-bold text-white">Ishan Gupta</h3>
+              <h3 className="text-xl font-bold text-white">Ishank Gupta</h3>
               <p className="text-xs font-semibold text-[#2fe1ff] uppercase tracking-wider">Chapter President</p>
             </div>
 
@@ -302,7 +293,7 @@ export default async function HomePage() {
               <img
                 src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
                 alt="Chapter President"
-                className="w-full h-full object-cover object-center"
+                className="w-full h-full object-cover"
               />
               {/* END IMAGE LOCATION */}
             </div>
@@ -323,7 +314,7 @@ export default async function HomePage() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-
+          
           <div className="p-4 rounded-2xl bg-black/60 border border-white/15 space-y-3 hover:border-[#1090ff] transition-colors">
             <div className="h-40 rounded-xl overflow-hidden border border-white/10">
               {/* IMAGE LOCATION: Replace cheat sheet resource image 1 */}
