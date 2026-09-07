@@ -21,67 +21,68 @@ export interface TeamMember {
 const EXTENDED_TEAM: TeamMember[] = [
   {
     id: 't1',
-    name: 'Aarav Sharma',
-    role: 'TECHNICAL HEAD',
+    name: 'Yuvika Juneja',
+    role: 'MEMBERSHIP CHAIR',
     imageUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80',
-    linkedin: '#',
-    email: 'mailto:aarav@example.com'
+    linkedin: 'https://www.linkedin.com/in/yuvika-juneja-3aa995334?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+    email: 'mailto:yuvikajuneja24098@gmail.com'
   },
   {
     id: 't2',
-    name: 'Priya Patel',
-    role: 'DESIGN LEAD',
+    name: 'Kavya Dev',
+    role: 'TREASURER',
     imageUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80',
-    linkedin: '#',
-    email: 'mailto:priya@example.com'
+    linkedin: 'https://www.linkedin.com/in/kavyaa-dev-9baa46183?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
+    email: 'mailto:kavyadev2005@gmail.com'
   },
   {
     id: 't3',
-    name: 'Rohan Gupta',
-    role: 'PR & OUTREACH',
+    name: 'Krutica Chauhaan',
+    role: 'WEB MASTER',
     imageUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80',
-    linkedin: '#',
-    email: 'mailto:rohan@example.com'
+    linkedin: 'https://www.linkedin.com/in/krutica-chauhaan-1ba5b5377?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+    email: 'mailto:kruticachauhaan1304@gmail.com'
   },
   {
     id: 't4',
-    name: 'Neha Singh',
-    role: 'EVENT COORDINATOR',
+    name: 'Pratham Rawat',
+    role: 'ASSOCIATE SECRETARY',
     imageUrl: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80',
-    linkedin: '#',
-    email: 'mailto:neha@example.com'
+    linkedin: 'https://www.linkedin.com/in/pratham-rawat-650bb5364?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+    email: 'mailto:pratham_cse25@delhitechnicalcampus.ac.in'
   },
   {
     id: 't5',
-    name: 'Vikram Mehta',
-    role: 'WEB DEVELOPER',
+    name: 'Anushka Srivastava',
+    role: 'SOCIAL HEAD',
     imageUrl: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80',
-    linkedin: '#',
-    email: 'mailto:vikram@example.com'
+    linkedin: 'https://www.linkedin.com/in/anushka-srivastava-2311373b1?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+    email: 'mailto:anushka4_cse24@delhitechnicalcampus.ac.in'
   },
   {
     id: 't6',
-    name: 'Anjali Verma',
-    role: 'CONTENT STRATEGIST',
+    name: 'Prachi Rana',
+    role: 'SOCIAL HEAD',
     imageUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80',
-    linkedin: '#',
-    email: 'mailto:anjali@example.com'
+    linkedin: 'https://www.linkedin.com/in/prachi-singh-rana-67382a394?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+    email: 'mailto:prachi2_cse25@delhitechnicalcampus.ac.in'
   },
   {
     id: 't7',
-    name: 'Kabir Singh',
-    role: 'LOGISTICS COORDINATOR',
+    name: 'Shivangi Yadav',
+    role: 'DESIGN HEAD',
     imageUrl: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80',
-    linkedin: '#',
-    email: 'mailto:kabir@example.com'
+    linkedin: 'https://www.linkedin.com/in/shivangiyadav01',
+    email: 'mailto:shivangi01824@gmail.com'
   },
   {
     id: 't8',
-    name: 'Meera Rao',
-    role: 'SOCIAL MEDIA LEAD',
+    name: 'Prachi Kumari',
+    role: 'DESIGN HEAD',
     imageUrl: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80',
-    linkedin: '#',
-    email: 'mailto:meera@example.com'
+    linkedin: 'https://www.linkedin.com/in/prachi-kumari-0312b1342?utm_source=share_via&utm_content=profile&utm_medium=member_android
+prachi_cse24@delhitechnicalcampus.ac.in',
+    email: 'mailto:prachicse_24@delhitechnicalcampus.ac.in'
   }
 ];
 
