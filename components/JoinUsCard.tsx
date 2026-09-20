@@ -39,7 +39,7 @@ export default function JoinUsCard() {
               <span className="w-full text-center text-[15px] font-bold text-white tracking-wide transition-colors duration-500 relative z-10">Become an ACM Member</span>
             </a>
 
-            <a href="https://whatsapp.com" target="_blank" rel="noreferrer" className="group relative w-full py-4 px-4 rounded-full bg-black/20 border border-white/30 hover:border-white/60 hover:bg-white/[0.05] shadow-lg transition-all duration-500 flex items-center overflow-hidden hover:-translate-y-1">
+            <a href="https://chat.whatsapp.com/B68fI3BILMB4negdDDJs1m" target="_blank" rel="noreferrer" className="group relative w-full py-4 px-4 rounded-full bg-black/20 border border-white/30 hover:border-white/60 hover:bg-white/[0.05] shadow-lg transition-all duration-500 flex items-center overflow-hidden hover:-translate-y-1">
               <div className="absolute inset-y-0 -left-[150%] w-[150%] bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:translate-x-[200%] transition-transform duration-[1200ms] ease-in-out pointer-events-none"></div>
               <div className="absolute left-2 w-11 h-11 rounded-full border border-white/30 flex items-center justify-center group-hover:border-white/60 group-hover:bg-white/10 transition-all duration-500 z-10">
                 <img src="/Vector-2.png" alt="Whatsapp" className="w-5 h-5 object-contain invert brightness-0 transition-all duration-500" />
@@ -55,7 +55,7 @@ export default function JoinUsCard() {
               <span className="w-full text-center text-[15px] font-bold text-white tracking-wide transition-colors duration-500 relative z-10">LinkedIn</span>
             </a>
 
-            <a href="https://x.com" target="_blank" rel="noreferrer" className="group relative w-full py-4 px-4 rounded-full bg-black/20 border border-white/30 hover:border-white/60 hover:bg-white/[0.05] shadow-lg transition-all duration-500 flex items-center overflow-hidden hover:-translate-y-1">
+            <a href="https://x.com/TheOfficialACM" target="_blank" rel="noreferrer" className="group relative w-full py-4 px-4 rounded-full bg-black/20 border border-white/30 hover:border-white/60 hover:bg-white/[0.05] shadow-lg transition-all duration-500 flex items-center overflow-hidden hover:-translate-y-1">
               <div className="absolute inset-y-0 -left-[150%] w-[150%] bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:translate-x-[200%] transition-transform duration-[1200ms] ease-in-out pointer-events-none"></div>
               <div className="absolute left-2 w-11 h-11 rounded-full border border-white/30 flex items-center justify-center group-hover:border-white/60 group-hover:bg-white/10 transition-all duration-500 z-10">
                 <img src="/Vector-4.png" alt="X" className="w-[18px] h-[18px] object-contain invert brightness-0 transition-all duration-500" />
@@ -63,7 +63,7 @@ export default function JoinUsCard() {
               <span className="w-full text-center text-[15px] font-bold text-white tracking-wide transition-colors duration-500 relative z-10">X</span>
             </a>
 
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="group relative w-full py-4 px-4 rounded-full bg-black/20 border border-white/30 hover:border-white/60 hover:bg-white/[0.05] shadow-lg transition-all duration-500 flex items-center overflow-hidden hover:-translate-y-1">
+            <a href="https://www.instagram.com/acm_dtc?stkn=MWJuMWM0eTd4YXZ5Ng==" target="_blank" rel="noreferrer" className="group relative w-full py-4 px-4 rounded-full bg-black/20 border border-white/30 hover:border-white/60 hover:bg-white/[0.05] shadow-lg transition-all duration-500 flex items-center overflow-hidden hover:-translate-y-1">
               <div className="absolute inset-y-0 -left-[150%] w-[150%] bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:translate-x-[200%] transition-transform duration-[1200ms] ease-in-out pointer-events-none"></div>
               <div className="absolute left-2 w-11 h-11 rounded-full border border-white/30 flex items-center justify-center group-hover:border-white/60 group-hover:bg-white/10 transition-all duration-500 z-10">
                 <img src="/Vector-3.png" alt="Instagram" className="w-5 h-5 object-contain invert brightness-0 transition-all duration-500" />
@@ -71,7 +71,7 @@ export default function JoinUsCard() {
               <span className="w-full text-center text-[15px] font-bold text-white tracking-wide transition-colors duration-500 relative z-10">Instagram</span>
             </a>
 
-            <a href="https://linktr.ee" target="_blank" rel="noreferrer" className="group relative w-full py-4 px-4 rounded-full bg-black/20 border border-white/30 hover:border-white/60 hover:bg-white/[0.05] shadow-lg transition-all duration-500 flex items-center overflow-hidden hover:-translate-y-1">
+            <a href="https://linktr.ee/ACM_DTC" target="_blank" rel="noreferrer" className="group relative w-full py-4 px-4 rounded-full bg-black/20 border border-white/30 hover:border-white/60 hover:bg-white/[0.05] shadow-lg transition-all duration-500 flex items-center overflow-hidden hover:-translate-y-1">
               <div className="absolute inset-y-0 -left-[150%] w-[150%] bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:translate-x-[200%] transition-transform duration-[1200ms] ease-in-out pointer-events-none"></div>
               <div className="absolute left-2 w-11 h-11 rounded-full border border-white/30 flex items-center justify-center group-hover:border-white/60 group-hover:bg-white/10 transition-all duration-500 z-10">
                 <img src="/Vector.png" alt="Linktree" className="w-4 h-4 object-contain invert brightness-0 transition-all duration-500" />
