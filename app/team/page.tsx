@@ -61,7 +61,7 @@ const EXTENDED_TEAM: TeamMember[] = [
   },
   {
     id: 't6',
-    name: 'Prachi Rana',
+    name: 'Prachi Singh Rana',
     role: 'SOCIAL HEAD',
     imageUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80',
     linkedin: 'https://www.linkedin.com/in/prachi-singh-rana-67382a394?utm_source=share_via&utm_content=profile&utm_medium=member_android',
@@ -80,8 +80,7 @@ const EXTENDED_TEAM: TeamMember[] = [
     name: 'Prachi Kumari',
     role: 'DESIGN HEAD',
     imageUrl: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80',
-    linkedin: 'https://www.linkedin.com/in/prachi-kumari-0312b1342?utm_source=share_via&utm_content=profile&utm_medium=member_android
-prachi_cse24@delhitechnicalcampus.ac.in',
+    linkedin: 'https://www.linkedin.com/in/prachi-kumari-0312b1342?utm_source=share_via&utm_content=profile&utm_medium=member_androidprachi_cse24@delhitechnicalcampus.ac.in',
     email: 'mailto:prachicse_24@delhitechnicalcampus.ac.in'
   }
 ];
