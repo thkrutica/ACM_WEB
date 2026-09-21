@@ -21,7 +21,7 @@ const LEADERS: LeaderProfile[] = [
     id: 'leader-1',
     name: 'Ishan Jain',
     role: 'CHAIRPERSON',
-    quote: "A leader's role is not to have all the answers, but to create an environment where innovation thrives.",
+    quote: "I’m not saying I run the chapter… I’m just saying things happen when I’m around.",
     // IMAGE LOCATION: Replace this photo URL with the Chairperson portrait
     imageUrl: '/ishan.png',
   },
@@ -29,7 +29,7 @@ const LEADERS: LeaderProfile[] = [
     id: 'leader-2',
     name: 'Dev Verma',
     role: 'VICE CHAIRPERSON',
-    quote: "At ACM, every idea matters — because today's experiment can become tomorrow's innovation.",
+    quote: "Keeping the chapter organized, one last-minute plan at a time.",
     // IMAGE LOCATION: Replace this photo URL with the Vice Chairperson portrait
     imageUrl: '/Dev.png',
     objectPosition: '25% 50%',
@@ -41,6 +41,22 @@ const LEADERS: LeaderProfile[] = [
     quote: "Demystifying tech and creating space for everyone to build real projects.",
     // IMAGE LOCATION: Replace this photo URL with the Tech Lead portrait
     imageUrl: '/Chhavi.png'
+  },
+  {
+    id: 'leader-4',
+    name: 'Kavya Dev',
+    role: 'TREASURER',
+    quote: "Keeping the team happy, the vibes positive, & the treasury? somewhere under control",
+    // IMAGE LOCATION: Replace this photo URL with the Vice Chairperson portrait
+    imageUrl: '/kavya.png',
+  },
+  {
+    id: 'leader-5',
+    name: 'Krutica Chauhaan',
+    role: 'WEBMASTER',
+    quote: "Not just the one behind the website, but the one behind its standards.",
+    // IMAGE LOCATION: Replace this photo URL with the Vice Chairperson portrait
+    imageUrl: '/krutica.png',
   },
 ];
 
