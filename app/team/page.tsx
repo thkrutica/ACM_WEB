@@ -29,27 +29,27 @@ const EXTENDED_TEAM: TeamMember[] = [
   },
   {
     id: 't2',
-    name: 'Kavya Dev',
-    role: 'TREASURER',
+    name: 'Pratham Rawat',
+    role: 'ASSOCIATE SECRETARY',
     imageUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80',
-    linkedin: 'https://www.linkedin.com/in/kavyaa-dev-9baa46183?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
-    email: 'mailto:kavyadev2005@gmail.com'
+    linkedin: 'https://www.linkedin.com/in/pratham-rawat-650bb5364?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+    email: 'mailto:pratham_cse25@delhitechnicalcampus.ac.in'
   },
   {
     id: 't3',
-    name: 'Krutica Chauhaan',
-    role: 'WEB MASTER',
+    name: 'Sanghmitra Sengar',
+    role: 'PR & OUTREACH',
     imageUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80',
-    linkedin: 'https://www.linkedin.com/in/krutica-chauhaan-1ba5b5377?utm_source=share_via&utm_content=profile&utm_medium=member_android',
-    email: 'mailto:kruticachauhaan1304@gmail.com'
+    linkedin: '',
+    email: 'mailto:'
   },
   {
     id: 't4',
-    name: 'Pratham Rawat',
-    role: 'ASSOCIATE SECRETARY',
+    name: 'Harpreet Singh',
+    role: 'PR & OUTREACH',
     imageUrl: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80',
-    linkedin: 'https://www.linkedin.com/in/pratham-rawat-650bb5364?utm_source=share_via&utm_content=profile&utm_medium=member_android',
-    email: 'mailto:pratham_cse25@delhitechnicalcampus.ac.in'
+    linkedin: 'https://www.linkedin.com/in/harpreet-singh-7823b6251?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+    email: 'mailto:harpreetsachdeva226@gmail.com'
   },
   {
     id: 't5',
@@ -82,6 +82,30 @@ const EXTENDED_TEAM: TeamMember[] = [
     imageUrl: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80',
     linkedin: 'https://www.linkedin.com/in/prachi-kumari-0312b1342?utm_source=share_via&utm_content=profile&utm_medium=member_androidprachi_cse24@delhitechnicalcampus.ac.in',
     email: 'mailto:prachicse_24@delhitechnicalcampus.ac.in'
+  },
+  {
+    id: 't9',
+    name: 'Sameer Shamsi',
+    role: 'TECH TEAM',
+    imageUrl: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80',
+    linkedin: 'https://www.linkedin.com/in/md-sameer-shamsi-15830b247?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+    email: 'mailto:mdsameershamsi3@gmail.com'
+  },
+  {
+    id: 't10',
+    name: 'Naman Sindhi',
+    role: 'TECH TEAM',
+    imageUrl: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80',
+    linkedin: 'https://www.linkedin.com/in/naman-undefined-062406367?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+    email: 'mailto:namansindhi8@gmail.com'
+  },
+  {
+    id: 't11',
+    name: 'Nayan Jyoti T.',
+    role: 'TECH TEAM',
+    imageUrl: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80',
+    linkedin: '',
+    email: 'mailto:'
   }
 ];
 
