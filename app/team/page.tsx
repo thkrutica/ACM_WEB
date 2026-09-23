@@ -104,8 +104,8 @@ const EXTENDED_TEAM: TeamMember[] = [
     name: 'Nayan Jyoti T.',
     role: 'TECH TEAM',
     imageUrl: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80',
-    linkedin: '',
-    email: 'mailto:'
+    linkedin: 'https://www.linkedin.com/in/nayan-talukdar-5969aa378?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+    email: 'mailto:nayanjyoti.2601@gmail.com'
   }
 ];
 
