@@ -40,8 +40,8 @@ const EXTENDED_TEAM: TeamMember[] = [
     name: 'Sanghmitra Sengar',
     role: 'PR & OUTREACH',
     imageUrl: '/Sanghmitra.png',
-    linkedin: '',
-    email: 'mailto:'
+    linkedin: 'https://www.linkedin.com/in/sanghmitrasengar21',
+    email: 'mailto:sanghmitrasengar0@gmail.com'
   },
   {
     id: 't4',
