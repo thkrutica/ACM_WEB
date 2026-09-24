@@ -169,7 +169,7 @@ export default async function HomePage() {
           <div className="rounded-xl overflow-hidden border border-white/15 shadow-lg h-52 group">
             {/* IMAGE LOCATION: Replace team member photo 1 */}
             <img
-              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80"
+              src="/ISHAN.jpeg"
               alt="ACM Team Member 1"
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
@@ -179,7 +179,7 @@ export default async function HomePage() {
           <div className="rounded-xl overflow-hidden border border-white/15 shadow-lg h-52 group">
             {/* IMAGE LOCATION: Replace team member photo 2 */}
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+              src="/Dev Verma.png"
               alt="ACM Team Member 2"
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
@@ -189,7 +189,7 @@ export default async function HomePage() {
           <div className="rounded-xl overflow-hidden border border-white/15 shadow-lg h-52 group">
             {/* IMAGE LOCATION: Replace team member photo 3 */}
             <img
-              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80"
+              src="/Chhavi.png"
               alt="ACM Team Member 3"
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
@@ -199,7 +199,7 @@ export default async function HomePage() {
           <div className="rounded-xl overflow-hidden border border-white/15 shadow-lg h-52 group">
             {/* IMAGE LOCATION: Replace team member photo 4 */}
             <img
-              src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=400&q=80"
+              src="/Kavya Dev.png"
               alt="ACM Team Member 4"
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
@@ -209,7 +209,7 @@ export default async function HomePage() {
           <div className="rounded-xl overflow-hidden border border-white/15 shadow-lg h-52 group">
             {/* IMAGE LOCATION: Replace team member photo 5 */}
             <img
-              src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80"
+              src="/KRUTICA.png"
               alt="ACM Team Member 5"
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
