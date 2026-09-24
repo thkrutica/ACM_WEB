@@ -48,7 +48,7 @@ const LEADERS: LeaderProfile[] = [
     role: 'TREASURER',
     quote: "Keeping the team happy, the vibes positive, & the treasury? somewhere under control",
     // IMAGE LOCATION: Replace this photo URL with the Vice Chairperson portrait
-    imageUrl: '/kavya.png',
+    imageUrl: '/Kavya Dev.png',
   },
   {
     id: 'leader-5',
