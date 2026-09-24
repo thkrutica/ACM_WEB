@@ -23,7 +23,7 @@ const EXTENDED_TEAM: TeamMember[] = [
     id: 't1',
     name: 'Yuvika Juneja',
     role: 'MEMBERSHIP CHAIR',
-    imageUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80',
+    imageUrl: '/YUVIKA JUNEJA.png',
     linkedin: 'https://www.linkedin.com/in/yuvika-juneja-3aa995334?utm_source=share_via&utm_content=profile&utm_medium=member_android',
     email: 'mailto:yuvikajuneja24098@gmail.com'
   },
@@ -31,7 +31,7 @@ const EXTENDED_TEAM: TeamMember[] = [
     id: 't2',
     name: 'Pratham Rawat',
     role: 'ASSOCIATE SECRETARY',
-    imageUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80',
+    imageUrl: '/Pratham Rawat.png',
     linkedin: 'https://www.linkedin.com/in/pratham-rawat-650bb5364?utm_source=share_via&utm_content=profile&utm_medium=member_android',
     email: 'mailto:pratham_cse25@delhitechnicalcampus.ac.in'
   },
@@ -47,7 +47,7 @@ const EXTENDED_TEAM: TeamMember[] = [
     id: 't4',
     name: 'Harpreet Singh',
     role: 'PR & OUTREACH',
-    imageUrl: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80',
+    imageUrl: '/Harpreet Singh.png',
     linkedin: 'https://www.linkedin.com/in/harpreet-singh-7823b6251?utm_source=share_via&utm_content=profile&utm_medium=member_android',
     email: 'mailto:harpreetsachdeva226@gmail.com'
   },
@@ -55,7 +55,7 @@ const EXTENDED_TEAM: TeamMember[] = [
     id: 't5',
     name: 'Anushka Srivastava',
     role: 'SOCIAL HEAD',
-    imageUrl: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80',
+    imageUrl: '/Anushka Srivastava.png',
     linkedin: 'https://www.linkedin.com/in/anushka-srivastava-2311373b1?utm_source=share_via&utm_content=profile&utm_medium=member_android',
     email: 'mailto:anushka4_cse24@delhitechnicalcampus.ac.in'
   },
@@ -63,7 +63,7 @@ const EXTENDED_TEAM: TeamMember[] = [
     id: 't6',
     name: 'Prachi Singh Rana',
     role: 'SOCIAL HEAD',
-    imageUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80',
+    imageUrl: '/Prachi Singh Rana.png',
     linkedin: 'https://www.linkedin.com/in/prachi-singh-rana-67382a394?utm_source=share_via&utm_content=profile&utm_medium=member_android',
     email: 'mailto:prachi2_cse25@delhitechnicalcampus.ac.in'
   },
@@ -87,7 +87,7 @@ const EXTENDED_TEAM: TeamMember[] = [
     id: 't9',
     name: 'Sameer Shamsi',
     role: 'TECH TEAM',
-    imageUrl: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80',
+    imageUrl: '/SAMEER SHAMSHI.png',
     linkedin: 'https://www.linkedin.com/in/md-sameer-shamsi-15830b247?utm_source=share_via&utm_content=profile&utm_medium=member_android',
     email: 'mailto:mdsameershamsi3@gmail.com'
   },
@@ -95,7 +95,7 @@ const EXTENDED_TEAM: TeamMember[] = [
     id: 't10',
     name: 'Naman Sindhi',
     role: 'TECH TEAM',
-    imageUrl: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80',
+    imageUrl: '/Naman Sindhi.png',
     linkedin: 'https://www.linkedin.com/in/naman-undefined-062406367?utm_source=share_via&utm_content=profile&utm_medium=member_android',
     email: 'mailto:namansindhi8@gmail.com'
   },
@@ -103,7 +103,7 @@ const EXTENDED_TEAM: TeamMember[] = [
     id: 't11',
     name: 'Nayan Jyoti T.',
     role: 'TECH TEAM',
-    imageUrl: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80',
+    imageUrl: '/NAYAN JYOTI T..png',
     linkedin: 'https://www.linkedin.com/in/nayan-talukdar-5969aa378?utm_source=share_via&utm_content=profile&utm_medium=member_android',
     email: 'mailto:nayanjyoti.2601@gmail.com'
   }
