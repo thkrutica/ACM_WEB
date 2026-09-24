@@ -272,7 +272,7 @@ export default async function HomePage() {
             </h2>
             
             <div className="border-l-2 border-[#1090ff] pl-4 space-y-1">
-              <h3 className="text-xl font-bold text-white">Ishank Gupta</h3>
+              <h3 className="text-xl font-bold text-white">Ishan Jain</h3>
               <p className="text-xs font-semibold text-[#2fe1ff] uppercase tracking-wider">Chapter President</p>
             </div>
 
@@ -291,7 +291,7 @@ export default async function HomePage() {
             <div className="w-48 h-60 rounded-2xl overflow-hidden border border-white/20 shadow-xl">
               {/* IMAGE LOCATION: Replace President photo URL below */}
               <img
-                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+                src="/ISHAN.jpeg"
                 alt="Chapter President"
                 className="w-full h-full object-cover"
               />
