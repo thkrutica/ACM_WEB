@@ -23,7 +23,7 @@ const LEADERS: LeaderProfile[] = [
     role: 'CHAIRPERSON',
     quote: "I’m not saying I run the chapter… I’m just saying things happen when I’m around.",
     // IMAGE LOCATION: Replace this photo URL with the Chairperson portrait
-    imageUrl: '/ishan.png',
+    imageUrl: '/ISHAN.jpeg',
   },
   {
     id: 'leader-2',
@@ -56,7 +56,7 @@ const LEADERS: LeaderProfile[] = [
     role: 'WEBMASTER',
     quote: "Not just the one behind the website, but the one behind its standards.",
     // IMAGE LOCATION: Replace this photo URL with the Vice Chairperson portrait
-    imageUrl: '/krutica.png',
+    imageUrl: '/KRUTICA.png',
   },
 ];
 
