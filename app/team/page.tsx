@@ -39,7 +39,7 @@ const EXTENDED_TEAM: TeamMember[] = [
     id: 't3',
     name: 'Sanghmitra Sengar',
     role: 'PR & OUTREACH',
-    imageUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80',
+    imageUrl: '/Sanghmitra.png',
     linkedin: '',
     email: 'mailto:'
   },
