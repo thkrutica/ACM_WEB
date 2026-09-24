@@ -71,7 +71,7 @@ const EXTENDED_TEAM: TeamMember[] = [
     id: 't7',
     name: 'Shivangi Yadav',
     role: 'DESIGN HEAD',
-    imageUrl: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80',
+    imageUrl: '/Shivangi Yadav.png',
     linkedin: 'https://www.linkedin.com/in/shivangiyadav01',
     email: 'mailto:shivangi01824@gmail.com'
   },
