@@ -7,6 +7,13 @@ import EventCarousel from '@/components/EventCarousel';
 import NewsletterForm from '@/components/NewsletterForm';
 import { createClient } from '@/lib/supabase/server';
 import { EventItem } from '@/lib/supabase/types';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  other: {
+    'google-site-verification': 't27UlNkggINqofcLP6NDWsjiuBItcgtfUC6yUjMhS70',
+  },
+};
 
 // Force dynamic rendering to query live events from Supabase on request
 export const dynamic = 'force-dynamic';
@@ -25,7 +32,6 @@ export default async function HomePage() {
   }
 
   return (
-    <meta name="google-site-verification" content="t27UlNkggINqofcLP6NDWsjiuBItcgtfUC6yUjMhS70"></meta>
     <div className="home-page max-w-7xl mx-auto space-y-24 py-8 px-4 md:px-8">
 
       {/* ===================================================================
