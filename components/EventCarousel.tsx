@@ -15,10 +15,10 @@ export interface PosterItem {
 const DEFAULT_POSTERS: PosterItem[] = [
   {
     id: 'p1',
-    title: 'Career Guidance Session',
-    tag: 'ACM WEEKEND',
+    title: 'ACM GENESIS EVENT 2026',
+    tag: 'GENESIS',
     // IMAGE LOCATION: Change image URL below to swap this poster artwork
-    imageUrl: "/images/acm1.jpeg", // IMAGE LOCATION: Change event poster image URL 1
+    imageUrl: "/public/ACM GENESIS EVENT.jpeg", // IMAGE LOCATION: Change event poster image URL 1
   },
   {
     id: 'p2',
