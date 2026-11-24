@@ -25,7 +25,7 @@ export default async function HomePage() {
   }
 
   return (
-    <meta name="google-site-verification" content="t27UlNkggINqofcLP6NDWsjiuBItcgtfUC6yUjMhS70" />
+    <meta name="google-site-verification" content="t27UlNkggINqofcLP6NDWsjiuBItcgtfUC6yUjMhS70" /> /**/
     <div className="home-page max-w-7xl mx-auto space-y-24 py-8 px-4 md:px-8">
 
       {/* ===================================================================
